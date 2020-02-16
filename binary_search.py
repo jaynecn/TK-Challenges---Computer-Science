@@ -45,7 +45,7 @@ while not correct:
   else:
     print('***Please enter either lower, higher, or equal***')
     
-  if left > 25:
+  if left > 25 or right > 25:
     print(f'Your letter has to be in the Alphabet! Start the game over again!!')
     correct = True
         
