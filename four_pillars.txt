@@ -1,0 +1,11 @@
+Four Pillars of OOP
+
+Encapsulation - hiding details of an object
+
+Similar to BBCiPlayer or Netflix.  People interact with the app, but they are sheltered from the minutae of how the task is achieved ie. playing a TV show or a film.
+
+Abstraction - the right access at the right time for achieving the task.  For example, in object, this can be defined by what something DOES need, but also by what it DOES NOT need.  Some functions may be added, and some may be taken away to make a system more performant.
+
+Inheritance - classes can automatically give their functions and methods to a class that is a sub-category of their class eg. Automobile => Car => Tesla
+
+Polymorphism - overriding the inherited functions or methods, supceding them with methods that are specific to certain constraints that particular class has.
