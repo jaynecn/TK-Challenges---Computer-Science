@@ -8,9 +8,12 @@ class User:
 class Warden(User):
   def __init__(self, name):
     super().__init__(name, is_admin=True)
-  def close_parking_lot(self, ):
-  def open_parking_lot(self, ):
-
+    valid_tickets = []
+  def check_tickets(self, ticket, customer):
+    checking = Tickets(self, name, is_valid)
+    self.valid_tickets.append(checking)    
+    
+    
 class Customer(User):
   def __init__(self, name):
     super().__init__(name)
@@ -19,16 +22,26 @@ class Customer(User):
     purchase = Tickets(ticket, self)
     self.purchases.append(purchase)
 
-# class Vendor(User):
-#   def __init__(self, name):
-#     super().__init__(name)
-#     self.products = []
-#   def create_product(self, product_name, product_price):
-#     product = Product(product_name, product_price, self)
-#     self.products.append(product)
+
+class ParkingLot:
+  def__init__(self, name):
+    self.name = name
+    self.parking_lot = []
+  def car_in_parking_lot(self, ):
+    car_added = Car(car_registration, self)
+    self.parking_lot.append(car_added)
+  def close_parking_lot(self):
+    if (len(parking_lot) == 100):
+      print("Parking lot is full")
+    else print ("Spaces")
+    
+   
+class Car:
+  def__init__(self, registration):
+    self.registration = registration
     
 class Tickets:
-  def__init__(self, name, price):
+  def__init__(self, name, price, is_valid=True):
     self.name = name
     self.price = price
     
