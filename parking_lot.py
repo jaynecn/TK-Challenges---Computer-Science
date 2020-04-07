@@ -13,7 +13,6 @@ class Warden(User):
     checking = Tickets(self, name, is_valid)
     self.valid_tickets.append(checking)    
     
-    
 class Customer(User):
   def __init__(self, name):
     super().__init__(name)
@@ -21,7 +20,6 @@ class Customer(User):
   def purchase_ticket(self, ticket):
     purchase = Tickets(ticket, self)
     self.purchases.append(purchase)
-
 
 class ParkingLot:
   def__init__(self, name):
@@ -34,8 +32,8 @@ class ParkingLot:
     if (len(parking_lot) == 100):
       print("Parking lot is full")
     else print ("Spaces")
-    
-   
+
+
 class Car:
   def__init__(self, registration):
     self.registration = registration
@@ -51,6 +49,4 @@ class Purchase:
     self.customer = customer
     self.purchase_price = ticket.price
     self.purchase_data = datetime.now()
-    
-    
     
