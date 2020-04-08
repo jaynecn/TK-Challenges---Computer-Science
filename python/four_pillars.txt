@@ -8,4 +8,4 @@ Abstraction - the right access at the right time for achieving the task.  For ex
 
 Inheritance - classes can automatically give their functions and methods to a class that is a sub-category of their class eg. Automobile => Car => Tesla
 
-Polymorphism - overriding the inherited functions or methods, supceding them with methods that are specific to certain constraints that particular class has.
+Polymorphism - overriding the inherited functions or methods, superceding them with methods that are specific to certain constraints that particular class has.

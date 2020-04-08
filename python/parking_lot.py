@@ -11,7 +11,8 @@ class Warden(User):
     valid_tickets = []
   def check_tickets(self, ticket, customer):
     checking = Tickets(self, name, is_valid)
-    self.valid_tickets.append(checking)    
+    if (is_valid == True):
+      self.valid_tickets.append(checking)    
     
 class Customer(User):
   def __init__(self, name):
