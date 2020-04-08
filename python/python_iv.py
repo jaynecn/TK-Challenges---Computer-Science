@@ -63,6 +63,33 @@ print(riley)
 print(riley.name)
 print(riley.lego())
 
-macey = Niece("Macey", 4, "Chips")
+macey = Niece("Macey", 2, "Chips")
 print(macey)
 print(macey.eat())
+
+class OS():
+  def __init__(self, description):
+    self.description = description
+    
+class Laptop():
+  def __init__(self, make, model):
+    self.make = make
+    self.model = model
+    
+class Coder():
+  def __init__(self, operating_system, laptop):
+    self.operating_system = operating_system
+    self.laptop = laptop
+  def about(self):
+    print(f"I have a {laptop.make} {laptop.model} using {operating_system.description}")
+      
+operating_system = OS('Windows')
+laptop = Laptop("Lenovo", "3490")
+ruairidh = Coder(operating_system, laptop)
+ruairidh.about()
+
+# composition
+# has a direct relationship, where one cannot exist without the other.  For example, a meal cannot be made without its ingredients.
+
+# aggregation
+# is an indirect relationship, it is possible for one thing to exist independently without the other.  For example, food can exist without a cooker, though usually the two things would be used together.
