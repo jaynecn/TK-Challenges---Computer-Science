@@ -80,13 +80,23 @@ class Coder():
   def __init__(self, operating_system, laptop):
     self.operating_system = operating_system
     self.laptop = laptop
+    self.gear = []
   def about(self):
     print(f"I have a {laptop.make} {laptop.model} using {operating_system.description}")
+    
+  def add_gear(self, laptop):
+    self.laptop = laptop
+    self.gear.append(laptop)
+    for i in self.gear:
+      print(f"Inventory: I have a {laptop.make} {laptop.model}")
       
 operating_system = OS('Windows')
-laptop = Laptop("Lenovo", "3490")
-ruairidh = Coder(operating_system, laptop)
-ruairidh.about()
+# laptop = Laptop("Lenovo", "3490")
+# ruairidh = Coder(operating_system, laptop)
+laptop = Laptop("Mac", "2345")
+jayne = Coder(operating_system, laptop)
+jayne.about()
+jayne.add_gear(laptop)
 
 # composition
 # has a direct relationship, where one cannot exist without the other.  For example, a meal cannot be made without its ingredients.
