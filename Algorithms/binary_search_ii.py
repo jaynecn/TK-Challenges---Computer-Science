@@ -6,11 +6,14 @@ def binary_search(arr, target):
   low = 0
   high = len(arr) - 1
   found = False
-     
+  print(type(target))
   while low <= high and not found:
     middle = int((low + high)/2)
-    print(middle)
-    if (arr[middle] == target):
+    
+    if (type(target) != int):
+      print (f"target is not recognised, try again")
+      found = True
+    elif (arr[middle] == target):
       print (f"Here is the location of the target({target}): array position {arr[middle]}")
       found = True
     elif (target < arr[middle]):
@@ -23,4 +26,4 @@ def binary_search(arr, target):
 
 
    
-binary_search(arr, 10) 
+binary_search(arr, 5) 
