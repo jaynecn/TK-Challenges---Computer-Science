@@ -1,12 +1,38 @@
-# What will the contents of the same array look like after each pass of the Insertion Sort algorithm?
+# # What will the contents of the same array look like after each pass of the Insertion Sort algorithm?
 
-25 67 4 33 19 40
+# 25 67 4 33 19 40
 
-25 67 4 33 19 40 # step 1 (no swaps)
-4 25 67 33 19 40 # step 2
-4 25 33 67 19 40 # step 3
-4 19 25 33 67 40 # step 4
-4 19 25 33 40 67 # step 5
+# 25 67 4 33 19 40 # step 1 (no swaps)
+# 4 25 67 33 19 40 # step 2
+# 4 25 33 67 19 40 # step 3
+# 4 19 25 33 67 40 # step 4
+# 4 19 25 33 40 67 # step 5
+
+# remember, a single element on its own is always sorted!
+# start looping after the first element of the array
+
+def insertionSort(arr):
+#     # start looping after the first element in arr
+
+#start with range at 1 because you want to start at the second element in the array
+  for i in range(1, len(arr)):
+#     # current element
+    current = arr[i]
+#     # previous element's index 
+    previous = i - 1
+#     # check previous elements in the array
+#     # i - 1
+#     while
+    while previous >= 0 and current < arr[previous]:
+      # current = 3
+      # previous element = 7
+#       # swap current element with previous
+      arr[previous + 1] = arr[previous]
+#     # swap both value
+# continue pushing element backwards
+      previous -= 1
+      
+    arr[previous + 1] = current
 
 """
 - **Insertion Sort** is an _in-place_ algorithm, meaning that it 
@@ -52,5 +78,5 @@ in_sort2(my_nums)
 print(my_nums)
 
 print(my_names)
-in_sort2(my_names)
+insertionSort(my_names)
 print(my_names)
