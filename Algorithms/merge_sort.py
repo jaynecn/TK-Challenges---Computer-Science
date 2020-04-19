@@ -12,6 +12,8 @@
 test = [1,67,333,888,2,5]
 
 def merge_sort(arr):
+  # DIVIDE PHASE
+  
   # length of arr is larger than 1, continue
   if len(arr) > 1:
     half = len(arr) // 2
@@ -22,6 +24,8 @@ def merge_sort(arr):
   return arr
 
 def merge(arrA, arrB):
+  # MERGE PHASE
+  
   # output array
   merged_arr = []
   # Left
@@ -39,6 +43,6 @@ def merge(arrA, arrB):
       merged_arr.append(arrB[R])
       R += 1
       
-  return merged_arr + arrA[L:] + arrB[R:]
+  return  merged_arr + arrA[L:] + arrB[R:]
 
 print(merge_sort(test))
