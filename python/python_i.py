@@ -10,6 +10,7 @@ def print_twice(arg):
   print(arg)
 
 do_twice(print_twice, ('boo'))
+print_twice('hellooo')
 
 def do_four(function, value):
   do_twice(function, value)
