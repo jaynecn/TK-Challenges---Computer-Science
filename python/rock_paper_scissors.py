@@ -3,7 +3,7 @@ import random
 
 #file i/o functions for historical results
 def load_results():
-    text_file = open("history.txt", "r")
+    text_file = open("python/history.txt", "r")
     history = text_file.read().split(",")
     text_file.close()
     return history
@@ -25,52 +25,53 @@ print("CHOOSE YOUR WEAPON!!!")
 
 #initialize user, computer choices
 computer = random.randint(1,3)
-user = int(input("[1] Rock  [2] Paper   [3] Scissors    [9] Quit\n"))
+user = (input("[1] Rock  [2] Paper   [3] Scissors    [9] Quit\n"))
 
 #gamplay loop
 while not user == 9:
+        
     #user chooses ROCK
     if user == 1:
         if computer == 1:
-            print("Computer chose rock...tie!")
+            print("\nComputer chose rock...tie!")
             ties += 1
         elif computer == 2:
-            print("Computer chose paper...computer wins :(")
+            print("\nComputer chose paper...computer wins :(")
             losses += 1
         else:
-            print("Computer chose scissors...you wins :)")
+            print("\nComputer chose scissors...you wins :)")
             wins += 1
 
     #user chooses PAPER
     elif user == 2:
         if computer == 1:
-            print("Computer chose rock...you win :)")
+            print("\nComputer chose rock...you win :)")
             wins += 1
         elif computer == 2:
-            print("Computer chose paper...tie!")
+            print("\nComputer chose paper...tie!")
             ties += 1
         else:
-            print("Computer chose scissors...computer wins :(")
+            print("\nComputer chose scissors...computer wins :(")
             losses += 1
     
     #user chooses SCISSORS
     elif user == 3:
         if computer == 1:
-            print("Computer chose rock...computer wins :(")
+            print("\nComputer chose rock...computer wins :(")
             losses += 1
         elif computer == 2:
-            print("Computer chose paper...you win :)")
+            print("\nComputer chose paper...you win :)")
             wins += 1
         else:
-            print("Computer chose scissors...tie!")
+            print("\nComputer chose scissors...tie!")
             ties += 1
     else:
-        print("Invalid selection. Please try again.")
+        print("\nInvalid selection. Please try again.\n")
     #print updated stats
     print("Wins: %s, Ties: %s, Losses: %s" % (wins, ties, losses))
 
     #prompt user to make another selection
-    print("Please choose to continue...")
+    print("\nPlease choose a number to continue...")
     #initialize user, computer choices
     computer = random.randint(1,3)
     user = int(input("[1] Rock  [2] Paper   [3] Scissors    [9] Quit\n"))
