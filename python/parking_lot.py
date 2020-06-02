@@ -12,7 +12,12 @@ class Warden(User):
   def check_tickets(self, ticket, customer):
     checking = Tickets(self, name, is_valid)
     if (is_valid == True):
-      self.valid_tickets.append(checking)    
+      print("Your ticket is valid.")
+      self.valid_tickets.append(checking)
+    else:
+      issue_ticket()
+  def issue_ticket():
+    print("Your ticket isn't valid.  You have to pay a fine.")  
     
 class Customer(User):
   def __init__(self, name):
