@@ -1,11 +1,20 @@
 Four Pillars of OOP
 
-Encapsulation - hiding details of an object
 
-Similar to BBCiPlayer or Netflix.  People interact with the app, but they are sheltered from the minutae of how the task is achieved ie. playing a TV show or a film.
+ENCAPSULATION - hiding details of an object
 
-Abstraction - the right access at the right time for achieving the task.  For example, in object, this can be defined by what something DOES need, but also by what it DOES NOT need.  Some functions may be added, and some may be taken away to make a system more performant.
+  Similar to BBCiPlayer or Netflix.  People interact with the app, but they are sheltered from the minutae of how the task is achieved ie. playing a TV show or a film.
 
-Inheritance - classes can automatically give their functions and methods to a class that is a sub-category of their class eg. Automobile => Car => Tesla
+  Another example is a programming language like Python!  We use Python and other computing languages as a short-hand to give the computer instuctions.  The programmers are shielded from the intricate details of the instructions that the language gives to the computer on our behalf.
 
-Polymorphism - overriding the inherited functions or methods, superceding them with methods that are specific to certain constraints that particular class has.
+ABSTRACTION - the right access at the right time for achieving the task.  
+  
+  For example, in object, this can be defined by what something DOES need, but also by what it DOES NOT need.  Some functions may be added, and some may be taken away to make a system more performant.
+
+  A customer on an online store needs access the list of items available for sale.  But they don't need access to a list of things that have sold-out.
+
+INHERITANCE - classes can automatically give their functions and methods.
+  Inhertiance is given to a class that is a sub-category of their class eg. Automobile => Car => Tesla.
+
+POLYMORPHISM - overriding the inherited functions or methods.
+  Inherited functions or methods are superceded with methods that are specific to certain constraints that particular class has.
